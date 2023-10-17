@@ -1,6 +1,83 @@
-{
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.autopep8"
+  {
+    "workbench.startupEditor": "none",
+    "workbench.colorTheme": "Black n' Purple",
+    "editor.fontSize": 14,
+    "explorer.compactFolders": false,
+    "code-runner.runInTerminal": true,
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.executorMap": {
+        "python": "clear ; python3 -u",
     },
-    "python.formatting.provider": "none"
+    "code-runner.ignoreSelection": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "python.defaultInterpreterPath": "venv/bin/python",
+    "workbench.editorAssociations": {
+        "*.zip": "default"
+    },
+    "liveServer.settings.donotVerifyTags": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "editor.minimap.enabled": false,
+    "window.zoomLevel": -1,
+    "editor.wordWrap": "on",
+    "editor.fontFamily": "'Droid Sans Mono', 'monospace', 'monospace' ",
+    "editor.fontLigatures": false,
+    "python.languageServer": "Pylance",
+    "python.testing.unittestEnabled": false, // ms-python.python
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": [], // -x to bail
+    "python.formatting.provider": "none",
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportUnknownMemberType": "none",
+        "reportUnknownArgumentType": "none",
+        "reportUnknownVariableType": "none",
+        "reportUnknownLambdaType": "none",
+        "reportUnknownParameterType": "none",
+    },
+    
+    "python.analysis.typeCheckingMode": "basic",
+    "[python]": {
+      "editor.defaultFormatter": "ms-python.autopep8",
+      "editor.tabSize": 4,
+      "editor.insertSpaces": true,
+      "editor.formatOnSave": true,
+      "editor.formatOnType": true,
+      "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+      }
+    },
+    "[html]": {
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "vscode.html-language-features",
+      "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+      }
+    },
+    "[django-html]": {
+      "editor.formatOnSave": false,
+      "editor.defaultFormatter": "vscode.html-language-features",
+      "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+      }
+    },
+    "files.associations": {
+      "*.js": "javascript",
+      "*.jsx": "javascriptreact",
+      "*.xml": "html",
+      "*.svg": "html",
+      "*.html": "html",
+      "django-html": "html", // batisteo.vscode-django
+      "**/*.html": "html",
+      "**/templates/**/*.html": "django-html",
+      "**/base_templates/**/*.html": "django-html",
+      "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+    },
+    "emmet.includeLanguages": {
+      "django-html": "html", // batisteo.vscode-django
+      "javascript": "javascriptreact",
+      "typescript": "typescriptreact"
+    }
 }
