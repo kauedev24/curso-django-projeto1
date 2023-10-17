@@ -16,7 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from recipes.views import home, contact, about
+# HTTP REQUEST <- HTTP RESPONSE
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', home),  # Home
+    path('about/', about),  # /about/
+    path('contact/', contact),  # /contact/
 ]
