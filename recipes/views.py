@@ -12,12 +12,14 @@ from django.shortcuts import render
 def home(request):
     """return HTTP response ->> render"""
     # return HttpResponse("Home 2")
-    return render(request, 'recipes/home.html')
+    return render(request, 'recipes/home.html', context={
+        'name': 'Kaue Oliveira'
+    })
 
 
 def contact(request):
     """return HTTP response"""
-    return HttpResponse("contact")
+    return render(request, 'me-apague/temp.html')
 
 
 def about(request):
