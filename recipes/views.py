@@ -19,7 +19,7 @@ def home(request):
 
 def contact(request):
     """return HTTP response"""
-    return render(request, 'me-apague/temp.html')
+    return render(request, 'recipes/contact.html')
 
 
 def about(request):
