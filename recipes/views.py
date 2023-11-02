@@ -11,6 +11,6 @@ from django.shortcuts import render
 def home(request):
     """return HTTP response ->> render"""
     # return HttpResponse("Home 2")
-    return render(request, 'recipes/home.html', context={
+    return render(request, 'recipes/pages/home.html', context={
         'name': 'Kaue Oliveira'
     })
