@@ -3,7 +3,6 @@ My Views
 render ->> read a file and render, return HttpResponse
 """
 
-from django.http import HttpResponse
 from django.shortcuts import render
 
 # Create your views here.
@@ -15,14 +14,3 @@ def home(request):
     return render(request, 'recipes/home.html', context={
         'name': 'Kaue Oliveira'
     })
-
-
-def contact(request):
-    """return HTTP response"""
-    return render(request, 'recipes/contact.html')
-
-
-def about(request):
-    """return HTTP response"""
-    return HttpResponse("about")
-    # return HTTP response
