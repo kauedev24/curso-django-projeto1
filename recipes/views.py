@@ -12,5 +12,5 @@ def home(request):
     """return HTTP response ->> render"""
     # return HttpResponse("Home 2")
     return render(request, 'recipes/pages/home.html', context={
-        'name': 'Kaue Oliveira'
+        'name': 'Kaue Oliveira'  # {{name}}
     })
