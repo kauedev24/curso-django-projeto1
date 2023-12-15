@@ -14,3 +14,11 @@ def home(request):
     return render(request, 'recipes/pages/home.html', context={
         'name': 'Kaue Oliveira'  # {{name}}
     })
+
+
+def recipe(request, id):
+    """return HTTP response ->> render"""
+    # return HttpResponse("Home 2")
+    return render(request, 'recipes/pages/home.html', context={
+        'name': 'Kaue Oliveira'  # {{name}}
+    })
