@@ -19,6 +19,6 @@ def home(request):
 def recipe(request, id):
     """return HTTP response ->> render"""
     # return HttpResponse("Home 2")
-    return render(request, 'recipes/pages/home.html', context={
+    return render(request, 'recipes/pages/recipe-view.html', context={
         'name': 'Kaue Oliveira'  # {{name}}
     })
