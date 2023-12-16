@@ -6,13 +6,13 @@
     </div>
 
     <div class="product-title-container">
-        <h2 class="product-title">Piteira A Piteira Yunk Vino</h2>
+        <h2 class="product-title">{{ recipe.title }}</h2>
     </div>
 
     <div class="product-author">
         <span class="product-author-item">
             <i class="fas fa-user"></i>
-            {{name}}
+            {{ recipe.author.first_name }} {{ recipe.author.last_name }}
         </span>
 
         <span class="product-author-item">
